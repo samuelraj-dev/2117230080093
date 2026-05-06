@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 @Service
-public class EvaluationApiClient {
+public class ExternalApiClient {
 
     private static final String DEPOTS_URL =
             "http://20.207.122.201/evaluation-service/depots";
@@ -25,7 +25,7 @@ public class EvaluationApiClient {
     private final AuthService authService;
     private final LoggingService loggingService;
 
-    public EvaluationApiClient(
+    public ExternalApiClient(
             RestTemplate restTemplate,
             AuthService authService,
             LoggingService loggingService
